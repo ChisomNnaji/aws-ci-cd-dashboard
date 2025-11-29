@@ -1,8 +1,10 @@
 {
   "name": "my-eb-project",
   "version": "1.0.0",
+  "description": "Simple static landing page deployed via AWS CI/CD",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2"
