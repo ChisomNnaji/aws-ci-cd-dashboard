@@ -1,1 +1,1 @@
-web: python -m http.server 5000
+web: node server.js
