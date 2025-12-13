@@ -4,18 +4,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 20
-    commands:
-      - echo Installing dependencies
-      - npm install
   build:
     commands:
-      - echo Build started
-      - npm run build || echo "No build step"
-  post_build:
-    commands:
-      - echo Build completed
-      - zip -r app.zip .  # create zip with everything in repo
+      - npm install
 
 artifacts:
   files:
-    - app.zip
+    - '**/*'
